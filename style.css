@@ -1,0 +1,56 @@
+*{
+		background-color: #161417;	
+		}
+		.título {
+		color: white;
+		font-size: 50px;
+		text-align: center;
+	}
+	.neon {
+		user-select: none;
+		pointer-events: none;
+		user-drag: none;
+	}
+	h1 {
+		color: white;
+		font-size: 35px;
+		margin: 5px;
+		user-select: none;
+		pointer-events: none;
+		font-family: 'Open Sans', sans-serif;
+	}
+	.container{
+		display: flex;
+		align-items: center;
+		margin-top: 20px;
+		margin-right: 20px;
+		margin-left: 280px;
+	}
+	.hr1{
+		margin-top: 0px;
+	}
+	.isateamo{
+			color: white;
+			text-align: center;
+			font-size: 20px;
+			user-select: none;
+			font-family: 'Open Sans', sans-serif;
+		}
+		.social{
+				display: flex;
+				justify-content: space-around;
+				margin-right: 500px;
+				margin-left: 500px;
+				cursor: pointer;
+				text-decoration: none;
+				user-select: none;
+			}
+			button{
+				border: none;
+			}
+			button:hover{
+				cursor: pointer;
+				transform: scale(1.2)
+				translateY(-10px);
+				transition-duration: 0.5s;
+			}
