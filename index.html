@@ -1,47 +1,166 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html>
 <head>
-	<meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>about dptm</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
-    rel="stylesheet">
-	<div class="container">
-		<h1 class="título">Olá, eu sou o dptm!</h1>
-				
-				
-	<img src="https://media.discordapp.net/attachments/1006334976557592599/1006347211719856278/neon.png"
-width="350px" class="neon">
-</div>
+  <meta charset="UTF-8">
+  <title>Planet Papelaria</title>
+  <style>
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      background-color: #000000;
+      color: #FFFFFF;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #030305;
+      font-family: 'Unispace', monospace;
+      font-size: 36px;
+      animation: color-animation 5s linear infinite;
+    }
+    
+    @keyframes color-animation {
+      0% {
+        color: #B0C4DE;
+      }
+      50% {
+        color: #00008B;
+      }
+      100% {
+        color: #B0C4DE;
+      }
+    }
+    
+    h2 {
+      color: #B0C4DE;
+      font-family: 'Unispace', monospace;
+      font-size: 36px;
+      font-style: italic;
+      animation: color-animation-2 5s linear infinite;
+    }
+    
+    @keyframes color-animation-2 {
+      0% {
+        color: #FF0000;
+      }
+      50% {
+        color: #0000FF;
+      }
+      100% {
+        color: #FF0000;
+      }
+    }
+    
+    .flash-card {
+      display: inline-block;
+      width: 350px;
+      height: 350px;
+      background-color: #00FFFF;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s;
+      border: 2px solid #000000;
+    }
+    
+    .flash-card:hover {
+      transform: scale(1.05);
+    }
+    
+    #products-container {
+      background: linear-gradient(to right, #0000FF, #FF0000);
+      background-size: 200% 200%;
+      animation: gradient-animation 5s linear infinite;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
+    footer {
+      background: linear-gradient(to top, rgba(0,0,0,0), #808080);
+      color: #FFFFFF;
+      padding: 20px;
+      font-size: 24px;
+    }
+    
+    footer a {
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    
+    #instagram {
+      color: #FF69B4;
+      font-size: 72px;
+    }
+    
+    #facebook {
+      color: #800080;
+      font-size: 72px;
+    }
+    
+    #twitter {
+      color: #ADD8E6;
+      font-size: 72px;
+    }
+    
+    #youtube {
+      color: #FF0000;
+      font-size: 72px;
+    }
+  </style>
 </head>
 <body>
-	<p class="mpb">Ex-youtuber & apenas mais um estudante que estuda programação por diversão.</p>
-	<br>
-	<br>
-	<div class="social">
-		<button>
-		<a href="https://www.youtube.com/channel/UCG1I6ZTWNiZ42A3PHCduFJw">
-			<img id="tagger" src="https://media.discordapp.net/attachments/1006334976557592599/1006347210692251679/42-425171_white-youtube-icono-png-white-youtube-logo-transparent.png" width="100px">
-		</a>
-	</button>
-		<button>
-			<a href="https://twitter.com/displayertm">
-			<img src="https://media.discordapp.net/attachments/1006334976557592599/1006347211354939483/Twitter_logo_2012.png" width="100px" height="100px">
-		</a>
-	</button>
-		<button>
-			<a href="https://open.spotify.com/user/g4mps35qwd87swyx4gpi7rihz?si=8459f8faa6db4ecd">
-			<img class=oi src="https://media.discordapp.net/attachments/1006334976557592599/1006358572797526057/White-Spotify-Icon-1024x1024.png" width="90px">
-		</a>
-		</button>
-	</div>
-	<div>
-
-	</div>
+  <h1>Bem-vindo à Planet Papelaria!</h1>
+  <p style="color: #FFFFFF; font-size: 12px; font-family: 'Unispace', monospace;">Produtos tão bons que parecem de outro planeta.</p>
+  
+  <h2 style="animation: color-animation-2 5s linear infinite; font-size: 24px;">Nossos produtos em destaque</h2>
+  
+  <div id="products-container">
+    <div class="flash-card">
+      <img src="https://cdn.awsli.com.br/1591/1591911/produto/219655803/essenciale_2023_-c9nb0pfe4f.png" width="200px" alt="Produto 1">
+      <p style="color: #FFFFFF; font-size: 24px;">Caderno 10 matérias - R$19,99</p>
+    </div>
+    
+    <div class="flash-card">
+      <img src="https://cdn.vnda.com.br/summit/2022/06/15/17_6_3_300_604343_holic_fofurices_eraser_surprise_display_900x900.png?v=1655324064" width="200px" alt="Produto 2">
+      <p style="color: #FFFFFF; font-size: 24px;">Caixa com 12 borrachas - R$24,99</p>
+    </div>
+    
+    <div class="flash-card">
+      <img src="https://papelariaqueiroz.com.br/media/catalog/product/cache/a5b8a36661ffb1f75d931d0041028ad9/p/a/pasta-com-elastico-40mm-azul_1.png" width="200px" alt="Produto 3">
+      <p style="color: #FFFFFF; font-size: 24px;">Pasta grande - R$14,99</p>
+    </div>
+  </div>
+  
+  <h2 style="animation: color-animation-2 5s linear infinite; font-size: 24px;">Sobre Nós</h2>
+  
+  <p>A Planet Papelaria é uma loja especializada em produtos raros e exclusivos. Acreditamos que a papelaria é mais do que apenas canetas e cadernos, é um mundo de possibilidades criativas. Nossos produtos foram cuidadosamente selecionados para atender às necessidades dos apaixonados por papelaria.</p>
+  
+  <p>Nosso objetivo é oferecer aos nossos clientes uma experiência única ao explorar a variedade de artigos que temos disponíveis. Desde canetas especiais a papéis artesanais, nossos produtos são escolhidos com base na qualidade, originalidade e design.</p>
+  
+  <p>Valorizamos a satisfação de nossos clientes e buscamos oferecer preços acessíveis. É por isso que estamos oferecendo um desconto de 50% em todos os produtos em destaque. Queremos que você descubra a magia da papelaria de uma forma acessível e divertida.</p>
+  
+  <p>Visite nossa loja ou entre em contato pelo telefone: (12) 3456-7890.</p>
+  
+  <h2 id="where-we-are" style="animation: color-animation-2 5s linear infinite; font-size: 24px;">Onde nós estamos</h2>
+  
+  <footer>
+    <p style="font-size: 24px;">© 2023 Planet Papelaria. Todos os direitos reservados.</p>
+    <a href="https://www.instagram.com/planet.papelaria/" id="instagram" style="font-size: 36px;">Instagram</a>
+    <a href="https://www.facebook.com/people/Planet-Papelaria/100066767810650/" id="facebook" style="font-size: 36px;">Facebook</a>
+    <a href="https://twitter.com/planeta_j" id="twitter" style="font-size: 36px;">Twitter</a>
+    <a href="https://www.youtube.com/@planetpenpapelaria3866/about" id="youtube" style="font-size: 36px;">Youtube</a>
+  </footer>
 </body>
 </html>
